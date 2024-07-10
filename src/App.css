@@ -1,0 +1,53 @@
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+.App-header {
+  margin-top: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8723e4;
+  padding: 1rem;
+}
+
+.navbar h1 {
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.home {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.home h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.home p {
+  font-size: 1.2rem;
+  color: #666;
+}
