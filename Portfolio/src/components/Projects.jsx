@@ -35,7 +35,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="relative py-24 px-4 bg-cover bg-center overflow-hidden"
+      className="relative py-24 px-4 bg-cover bg-center overflow-hidden font-protest"
       style={{ backgroundImage: "url('/cherry-blossom-bg.jpg')" }}
     >
       {/* Lanterns for symmetry */}

@@ -21,7 +21,7 @@ const Achievements = () => {
   return (
     <section
       id="achievements"
-      className="relative py-24 px-4 bg-gradient-to-br from-[#7c0a02] to-[#250202] text-white overflow-hidden"
+      className="font-protest relative py-24 px-4 bg-gradient-to-br from-[#7c0a02] to-[#250202] text-white overflow-hidden"
     >
       {/* Fireworks */}
       {fireworks.map((fw) => (
@@ -72,7 +72,7 @@ const Achievements = () => {
               className="w-22 h-20 mx-auto mb-4 drop-shadow-xl"
             />
 
-            <h4 className="text-xl font-bold mb-3 text-center font-serif text-red-800">
+            <h4 className="font-protest text-xl font-bold mb-3 text-center  text-red-800">
               {item.title}
             </h4>
             <p className="text-center text-red-700">{item.desc}</p>

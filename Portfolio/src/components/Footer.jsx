@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#1a0000] text-center py-6 text-gray-400 border-t border-red-800 shadow-inner">
+    <footer className="font-protest relative bg-[#1a0000] text-center py-6 text-gray-400 border-t border-red-800 shadow-inner">
       {/* Glowing Top Border Effect */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-500 via-red-500 to-yellow-500 blur-sm animate-pulse" />
 

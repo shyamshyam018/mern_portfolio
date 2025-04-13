@@ -4,7 +4,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="relative py-24 px-4 bg-[#3b0a15] text-white overflow-hidden"
+      className="relative py-24 px-4 bg-[#3b0a15] text-white overflow-hidden font-protest"
     >
       {/* Lanterns */}
       <div className="absolute top-10 left-10 w-14 animate-float z-0 opacity-70">

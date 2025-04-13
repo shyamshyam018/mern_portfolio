@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="relative py-24 px-6 bg-gradient-to-b from-[#2c0d0d] to-black text-white text-center overflow-hidden"
+      className="font-protest relative py-24 px-6 bg-gradient-to-b from-[#2c0d0d] to-black text-white text-center overflow-hidden"
     >
       {/* Floating lanterns or glowing orbs */}
       {[...Array(10)].map((_, i) => (
@@ -21,7 +21,7 @@ const Contact = () => {
       ))}
 
       {/* Heading */}
-      <h2 className="text-5xl font-semibold font-serif text-yellow-300 mb-6 drop-shadow-[0_0_15px_gold]">
+      <h2 className=" font-protest text-5xl font-semibold  text-yellow-300 mb-6 drop-shadow-[0_0_15px_gold]">
         📜 Let's Connect 📜
       </h2>
 

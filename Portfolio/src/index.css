@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Protest+Riot&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -57,5 +58,5 @@ body {
   font-weight: 400;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Protest+Riot&display=swap');
+
 
