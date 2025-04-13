@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer className="bg-gray-900 text-center py-6 text-gray-500">
+      <p>© {new Date().getFullYear()} Shyam Raj. All rights reserved.</p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
