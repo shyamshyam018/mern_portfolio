@@ -2,21 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    cursor: none;
+@keyframes spark-fade {
+    0% {
+      opacity: 0.9;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.3);
+    }
   }
-  .cursor-symbol {
-    font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif;
+  
+  @keyframes spark-expansion {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.5);
+    }
   }
-
   
   @keyframes flame-flicker {
-    0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
-    50% { transform: scale(1.05) rotate(1deg); opacity: 0.95; }
+    0%, 100% {
+      transform: scale(1) rotate(0deg);
+    }
+    50% {
+      transform: scale(1.05) rotate(1deg);
+    }
   }
   
   .animate-flame-flicker {
-    animation: flame-flicker 1s infinite ease-in-out;
+    animation: flame-flicker 1.5s infinite ease-in-out;
   }
   
-  
+body {
+  cursor: none;
+}
