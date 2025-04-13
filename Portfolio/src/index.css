@@ -2,3 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    cursor: none;
+  }
+  .cursor-symbol {
+    font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif;
+  }
+
+  
+  @keyframes flame-flicker {
+    0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+    50% { transform: scale(1.05) rotate(1deg); opacity: 0.95; }
+  }
+  
+  .animate-flame-flicker {
+    animation: flame-flicker 1s infinite ease-in-out;
+  }
+  
+  

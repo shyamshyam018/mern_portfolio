@@ -8,10 +8,12 @@ import Experience from "./components/Experience.jsx";
 import Achievements from "./components/Achievements.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
+import DragonCursor from "./decor/DragonCursor.jsx";
 
 function App() {
   return (
     <div className="bg-gray-900 text-white scroll-smooth">
+      <DragonCursor />
       <Header />
       <Hero />
       <About />
