@@ -69,6 +69,7 @@ const DragonCursor = () => {
           transform: `translate3d(${position.x}px, ${position.y}px, 0)`,
         }}
       >
+        
         <div className="relative w-16 h-16 animate-flame-flicker">
           <img
             src={dragonImg}
