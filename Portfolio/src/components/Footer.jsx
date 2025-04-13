@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-500 via-red-500 to-yellow-500 blur-sm animate-pulse" />
 
       <p className="text-sm md:text-base font-light tracking-wide z-10 relative">
-        © {new Date().getFullYear()} <span className="text-yellow-400 font-semibold">Shyam Raj</span> 🐲 | Crafted with ❤️ and creativity.
+        © {new Date().getFullYear()}  | Crafted by <span className="text-yellow-400 font-semibold">Shyam Raj</span> ❤️ .
       </p>
 
       {/* Optional Scroll-to-top button */}
