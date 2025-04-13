@@ -37,13 +37,13 @@ const Hero = () => {
         </p>
         <div className="space-x-4">
           <a
-            href="#projects"
+            href="https://drive.google.com/file/d/1qNm85eVUlu1Gy5x_de_adXhcyFcrcpwx/view?usp=sharing"
             className="bg-pink-500 text-white px-6 py-2 rounded-xl shadow hover:bg-pink-600 transition duration-300 font-semibold"
           >
             View Resume
           </a>
           <a
-            href="https://drive.google.com/file/d/1qNm85eVUlu1Gy5x_de_adXhcyFcrcpwx/view?usp=sharing"
+            href="https://github.com/shyamshyam018"
             target="_blank"
             rel="noopener noreferrer"
             className="text-pink-700 underline hover:text-pink-900 font-semibold transition duration-300"
