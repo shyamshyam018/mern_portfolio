@@ -38,3 +38,21 @@
 body {
   cursor: none;
 }
+
+.roboto-slab-title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+}
+
+.bungee-tint-heading {
+  font-family: "Bungee Tint", sans-serif;
+}
+
+.protest-riot-nav {
+  font-family: "Protest Riot", sans-serif;
+}
+
+.roboto-body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
