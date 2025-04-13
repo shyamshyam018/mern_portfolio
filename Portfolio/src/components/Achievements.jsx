@@ -5,15 +5,22 @@ const Achievements = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
+      const id = Math.random();
+
       setFireworks((prev) => [
         ...prev,
         {
-          id: Math.random(),
+          id,
           top: `${Math.random() * 90}%`,
           left: `${Math.random() * 90}%`,
         },
       ]);
-    }, 1000); // New firework every second
+
+      // Remove the firework after animation completes (e.g., 3s)
+      setTimeout(() => {
+        setFireworks((prev) => prev.filter((f) => f.id !== id));
+      }, 3000);
+    }, 500); // New firework every second
 
     return () => clearInterval(interval);
   }, []);
@@ -23,16 +30,14 @@ const Achievements = () => {
       id="achievements"
       className="font-protest relative py-24 px-4 bg-gradient-to-br from-[#7c0a02] to-[#250202] text-white overflow-hidden"
     >
-      {/* Fireworks */}
+      {/* Firework Animation */}
       {fireworks.map((fw) => (
         <div
           key={fw.id}
-          className="absolute w-16 h-16 bg-[url('/fireworks.png')] bg-contain bg-no-repeat animate-spin-slow pointer-events-none"
+          className="absolute w-16 h-16 bg-[url('/fireworks.png')] bg-contain bg-no-repeat animate-firework pointer-events-none"
           style={{
             top: fw.top,
             left: fw.left,
-            opacity: 0.8,
-            animationDuration: `${2 + Math.random() * 3}s`,
           }}
         />
       ))}
@@ -42,7 +47,7 @@ const Achievements = () => {
         🏮 Achievements 🏮
       </h2>
 
-      {/* Achievements */}
+      {/* Achievements List */}
       <div className="max-w-6xl mx-auto grid gap-12 md:grid-cols-2 lg:grid-cols-3 relative z-10">
         {[
           {
@@ -65,14 +70,12 @@ const Achievements = () => {
             key={i}
             className="relative bg-gradient-to-br from-[#ffebbb] to-[#ffd700] text-red-900 border-2 border-yellow-600 rounded-3xl shadow-[0_0_25px_rgba(255,255,255,0.2)] overflow-hidden p-6 hover:scale-105 transition-transform duration-300"
           >
-            {/* Festive Badge Image */}
             <img
               src={item.image}
               alt="badge"
               className="w-22 h-20 mx-auto mb-4 drop-shadow-xl"
             />
-
-            <h4 className="font-protest text-xl font-bold mb-3 text-center  text-red-800">
+            <h4 className="font-protest text-xl font-bold mb-3 text-center text-red-800">
               {item.title}
             </h4>
             <p className="text-center text-red-700">{item.desc}</p>

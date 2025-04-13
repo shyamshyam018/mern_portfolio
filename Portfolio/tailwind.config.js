@@ -12,6 +12,7 @@ module.exports = {
         float: 'float 6s ease-in-out infinite',
         'float-reverse': 'float-reverse 6s ease-in-out infinite',
         fall: 'fall 10s linear infinite',
+        firework: "firework 2.5s ease-out forwards",
       },
       
       keyframes: {
@@ -31,6 +32,11 @@ module.exports = {
           '0%': { transform: 'translateY(-10%) rotate(0deg)', opacity: '0' },
           '50%': { opacity: '1' },
           '100%': { transform: 'translateY(110vh) rotate(360deg)', opacity: '0' },
+        },
+        firework: {
+          "0%": { transform: "scale(0.2)", opacity: "0.9" },
+          "50%": { transform: "scale(1.2)", opacity: "1" },
+          "100%": { transform: "scale(0)", opacity: "0" },
         },
   
       },
