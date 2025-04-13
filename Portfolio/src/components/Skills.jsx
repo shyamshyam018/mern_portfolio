@@ -4,8 +4,7 @@ const Skills = () => {
   const skills = [
     "Java (Intermediate)",
     "React (Intermediate)",
-    "Tailwind CSS",
-    "Bootstrap 5",
+    "TailwindCSS (Intermediate)",
     "Django (Intermediate)",
     "Python (Basic)",
     "SQL (Intermediate)",
@@ -50,7 +49,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="lantern-skill relative w-44 h-40 bg-[url('/lantern.png')] bg-contain bg-no-repeat bg-center flex items-center justify-center text-sm text-yellow-200 font-bold font-bungee drop-shadow-md transition-transform duration-300"
+            className="lantern-skill relative h-80 bg-[url('/lantern.png')] bg-contain bg-no-repeat bg-center flex items-center justify-center text-sm text-pink-950 font-bold font-protest drop-shadow-md transition-transform duration-300"
           >
             <span className="text-center px-2">{skill}</span>
           </div>

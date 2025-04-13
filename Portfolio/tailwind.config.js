@@ -8,6 +8,7 @@ module.exports = {
       animation: {
         'hang': 'hang 2.5s ease-in-out infinite',
         'bounce-slow': 'bounce 3s infinite',
+        'pulse-slow': 'pulse 4s ease-in-out infinite',
         float: 'float 6s ease-in-out infinite',
         'float-reverse': 'float-reverse 6s ease-in-out infinite',
         fall: 'fall 10s linear infinite',
