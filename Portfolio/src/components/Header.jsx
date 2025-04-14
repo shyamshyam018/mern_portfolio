@@ -31,7 +31,7 @@ const Header = () => {
             <a
               key={section}
               href={`#${section.toLowerCase()}`}
-              className="text-[#cc1e1e] hover:text-white hover:cursor-none font-medium transition-all duration-200 hover:scale-110"
+              className="text-[#cc1e1e] hover:text-white  font-medium transition-all duration-200 hover:scale-110"
               aria-label={`Go to ${section} section`}
             >
               {section}
