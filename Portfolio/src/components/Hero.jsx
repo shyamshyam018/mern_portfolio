@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       className="h-screen flex items-center justify-center text-center bg-cover bg-center relative overflow-hidden"
-      style={{ backgroundImage: "url('/cherry-blossom-bg.jpg')" }}
+      style={{ backgroundImage: "url('/bg3.jpeg')" }}
       
     >
       <div className="absolute top-10 left-10 w-16 animate-float">
@@ -29,7 +29,7 @@ const Hero = () => {
       ))}
 
       <div className="z-10 px-4">
-        <h1 className="text-4xl md:text-6xl font-protest text-pink-700 drop-shadow-md mb-6">
+        <h1 className="text-4xl md:text-6xl font-protest text-orange-200 drop-shadow-md mb-6">
           Hi, I'm Shyam Raj 🐦‍🔥
         </h1>
         <p className="text-lg md:text-2xl text-[#d63384] font-medium tracking-wide font-bungee mb-6">
